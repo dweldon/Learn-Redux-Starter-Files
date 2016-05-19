@@ -9,5 +9,7 @@ import posts from './data/posts';
 
 const defaultState = { posts, comments };
 
-export default store = createStore(rootReducer, defaultState);
+const store = createStore(rootReducer, defaultState);
 export const history = syncHistoryWithStore(browserHistory, store);
+
+export default store;
